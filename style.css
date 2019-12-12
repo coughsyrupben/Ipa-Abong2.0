@@ -12,22 +12,12 @@ Light White #FFFFFF
   100% {opacity: 0.5}
 }
 
-@keyframes heading {
-  0% {right: 0px; opacity: 0}
-  100% {right: 10px; opacity: 1}
-}
 
-@keyframes navbarlink {
-  0% {opacity: 0}
-  100% {opacity: 1}
-}
-
-}
 body{
   background-color: #FFFFFF;
 }
 
-p, ol, ul, span, a, td, tr, address, h6{
+p, ol, ul, span, a, td, tr, address, h6, .card{
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -35,14 +25,45 @@ h1, h2, h3, h4, h5, footer{
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2{
-  animation: heading 2s;
+h1{
+  color: White;
+
 }
+
+span.highlight{
+  background-color: rgba(191, 191, 191, 0.5);
+  padding: 0.25rem;
+
+}
+
+.btn-primary{
+  background-color: rgba(191, 191, 191, 0.3);
+  color: white;
+  padding: 1rem;
+  border: solid white;
+  border-radius: 6px;
+}
+
+.btn-primary:hover, .btn-primary:active{
+  background-color: rgba(191, 191, 191, 0.5);
+  color: black;
+  padding: 1rem;
+  border: solid white;
+  border-radius: 6px;
+}
+
+
 
 .flex-container{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.icon-logo {
+    background-image: url("./logo.png");
+    background-position: center center;
+    background-size: 16px;
 }
 
 #form{
@@ -79,12 +100,36 @@ textarea:focus, textarea:active{
   animation-duration: 1s;
 }
 
+.container .jumbotron {
+    border-radius: 6px !important;
+}
+
+.container .carousel {
+  border-radius: 6px !important;
+}
+
+img{
+  border-radius: 6px;
+}
+
 #homepage{
   background-image: url("./kayukayu.jpg");
   background-size: cover;
-  ba
 }
 
-.card{
+#get-margin-4{
   margin-top: 4rem;
+}
+
+#products{
+  background-image: url(./products.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+#production{
+  background-image: url(./production.jpg);
+  background-size: cover;
+  background-position: center;
 }
