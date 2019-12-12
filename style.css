@@ -1,0 +1,90 @@
+/**
+Color palettes
+Dark Blue #124559
+Blue #1FA6A6
+Light orange #F2BF5E
+Pink #F25E5E
+Light White #FFFFFF
+**/
+
+@keyframes imagehover {
+  0% {opacity: 1}
+  100% {opacity: 0.5}
+}
+
+@keyframes heading {
+  0% {right: 0px; opacity: 0}
+  100% {right: 10px; opacity: 1}
+}
+
+@keyframes navbarlink {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+}
+body{
+  background-color: #FFFFFF;
+}
+
+p, ol, ul, span, a, td, tr, address, h6{
+  font-family: "Fira Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, footer{
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2{
+  animation: heading 2s;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#form{
+  display: flex;
+  justify-content: space-around;
+}
+
+input{
+  width: 5em;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input:focus, input:active{
+  width: 12em;
+}
+
+textarea{
+  width: 5em;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+textarea:focus, textarea:active{
+  width: 15em;
+  height: 10em;
+}
+
+.imgblock{
+  width: 20em;
+  height: 20em;
+  margin-bottom: 3em;}
+
+.imgblock:hover{
+  animation: imagehover;
+  animation-duration: 1s;
+}
+
+#homepage{
+  background-image: url("./kayukayu.jpg");
+  background-size: cover;
+  ba
+}
+
+.card{
+  margin-top: 4rem;
+}
