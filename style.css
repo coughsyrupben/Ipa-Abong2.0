@@ -1,28 +1,37 @@
 /**
 Color palettes
-Dark Blue #124559
-Blue #1FA6A6
-Light orange #F2BF5E
-Pink #F25E5E
-Light White #FFFFFF
+background dark blue #383961 rgb(56,57,97)
+
+navbar etc. light blue #5F758E rgb(95,117,142)
+
+
+light accents #DBDFAC rgb(219,223,172)
+
+red #DB162F rgb(219,22,47)
+
+dark accents #3B1F2B rgb(59,31,43)
+
 **/
+
+/* All animations collected here*/
 
 @keyframes imagehover {
   0% {opacity: 1}
   100% {opacity: 0.5}
 }
 
+/*All pages section*/
 
 body{
-  background-color: #FFFFFF;
+  background-color: rgb(56,57,97);
 }
 
 p, ol, ul, span, a, td, tr, address, h6, .card{
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Merriweather", serif;
 }
 
 h1, h2, h3, h4, h5, footer{
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inria Serif", serif;
 }
 
 h1{
@@ -30,29 +39,13 @@ h1{
 
 }
 
-span.highlight{
-  background-color: rgba(191, 191, 191, 0.5);
-  padding: 0.25rem;
-
+h2{
+  color: rgb(219,223,172);
 }
 
-.btn-primary{
-  background-color: rgba(191, 191, 191, 0.3);
-  color: white;
-  padding: 1rem;
-  border: solid white;
+img{
   border-radius: 6px;
 }
-
-.btn-primary:hover, .btn-primary:active{
-  background-color: rgba(191, 191, 191, 0.5);
-  color: black;
-  padding: 1rem;
-  border: solid white;
-  border-radius: 6px;
-}
-
-
 
 .flex-container{
   display: flex;
@@ -60,11 +53,116 @@ span.highlight{
   justify-content: space-around;
 }
 
+
+/*Navbar section*/
+
+.navbar{
+  background-color: rgb(95,117,142);
+}
+
+.navbar a{
+  font-family: "Merriweather", serif;
+}
+
+.dropdown-menu{
+  background-color: rgb(95,117,142);
+}
+
+.dropdown-item{
+  color: White;
+}
+
+/*all buttons*/
+
+.btn-primary{
+  background-color: rgba(219,223,172, 0.5);
+  color: rgb(59,31,43);
+  padding: 1rem;
+  border: solid rgb(219,223,172);
+  border-radius: 6px;
+}
+
+.btn-primary:hover, .btn-primary:active{
+  background-color: rgb(219,223,172);
+  color: black;
+  padding: 1rem;
+  border: solid rgb(219,223,172);
+  border-radius: 6px;
+}
+
+.btn-secondary{
+  background-color: rgb(59,31,43);
+}
+
+.btn-secondary:hover, .btn-secondary:active{
+  background-color: rgb(219,22,47);
+}
+}
+/*index.html only*/
+
 .icon-logo {
     background-image: url("./logo.png");
     background-position: center center;
     background-size: 16px;
 }
+
+
+.imgblock{
+  width: 20em;
+  height: 20em;
+  margin-bottom: 3em;}
+
+.imgblock:hover{
+  animation: imagehover;
+  animation-duration: 1s;
+}
+
+.container .jumbotron {
+    border-radius: 6px !important;
+}
+
+
+.container .carousel {
+  border-radius: 6px !important;
+}
+
+
+#homepage{
+  background-image: url("./kayukayu.jpg");
+  background-size: cover;
+}
+
+#products{
+  background-image: url(./products.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#products:hover, #products:active{
+  transition:
+  transition-timing-function: linear;
+}
+
+#production{
+  background-image: url(./production.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#production:hover, #production:active{
+  animation: imagehover;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
+/*Jobs Page*/
+
+#get-margin-4{
+  margin-top: 4rem;
+}
+
+
+/*for forms*/
 
 #form{
   display: flex;
@@ -90,46 +188,22 @@ textarea:focus, textarea:active{
   height: 10em;
 }
 
-.imgblock{
-  width: 20em;
-  height: 20em;
-  margin-bottom: 3em;}
 
-.imgblock:hover{
-  animation: imagehover;
-  animation-duration: 1s;
+/*for footer*/
+
+.material-icons{
+  size:
 }
 
-.container .jumbotron {
-    border-radius: 6px !important;
+#small{
+  font-size: 0.75rem;
 }
 
-.container .carousel {
-  border-radius: 6px !important;
+footer.bg-dark{
+  color: rgb(219,223,172);
+  background-color: rgb(59,31,43) !important;
 }
 
-img{
-  border-radius: 6px;
-}
-
-#homepage{
-  background-image: url("./kayukayu.jpg");
-  background-size: cover;
-}
-
-#get-margin-4{
-  margin-top: 4rem;
-}
-
-#products{
-  background-image: url(./products.jpg);
-  background-size: cover;
-  background-position: center;
-
-}
-
-#production{
-  background-image: url(./production.jpg);
-  background-size: cover;
-  background-position: center;
+.footer-copyright{
+  background-color: rgb(95,117,142);
 }
