@@ -49,6 +49,10 @@ img{
   justify-content: space-around;
 }
 
+a.plain{
+  text-decoration: none;
+  color: white;
+}
 
 /*Navbar section*/
 
@@ -165,6 +169,10 @@ img{
   justify-content: space-around;
 }
 
+textarea{
+  width: 27rem;
+}
+
 /*products page*/
 
 #scrollspy-factory{
@@ -187,8 +195,4 @@ img{
 footer.bg-dark{
   color: rgb(219,223,172);
   background-color: rgb(59,31,43) !important;
-}
-
-.footer-copyright{
-  background-color: rgb(95,117,142);
 }

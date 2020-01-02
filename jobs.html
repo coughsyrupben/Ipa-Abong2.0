@@ -36,6 +36,8 @@
               <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item text-muted" href="products.html"> Product List </a>
                 <a class="dropdown-item text-muted" href="#"> Placing an order </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-muted" href="factory.html"> Production Process </a>
               </div>
             </li>
             <li class="nav-item">
@@ -184,16 +186,22 @@
         </button>
       </div>
       <div class="modal-body">
-        <form name="contact" method="POST" data-netlify="true" action=".\success.html">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
-      </p>
+        <form name="contact" method="POST" data-netlify="true" action="./success.html">
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="full-name">Full Name</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name" aria-label="full-name" aria-describedby="full-name">
+            </div><br>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="email">Email</span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="email">
+            </div><br>
+            <textarea name="message" id="message" placeholder="Type your message..."></textarea>
+          </p>
     </form>
       </div>
       <div class="modal-footer">
@@ -240,6 +248,9 @@
       </div>
     </div><br>
     <div class="text-center"> Ipa Abong Group © 2019
+    </div>
+    <div class="container-xl text-center">
+          <a href="./fineprint.html" id="small"> Terms and Conditions </a>
     </div>
   </footer>
 

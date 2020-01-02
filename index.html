@@ -13,11 +13,7 @@
 
   </head>
   <body>
-    <script type="text/javascript">
-    $("document").ready(function(){
-       $('#myModal').modal('show');
-        });
-    </script>
+
 
 
 <div>
@@ -42,6 +38,8 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="products.html"> Product List </a>
               <a class="dropdown-item" href="#"> Placing an order </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="factory.html"> Production Process </a>
             </div>
           </li>
           <li class="nav-item">
@@ -55,9 +53,16 @@
       </div></div>
     </div></nav>
   </div>
+<br>
+  <div class="container">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <p>This webpage is in <strong>English</strong>. View in <a href="#">Indonesian</a> or <a href="#">Japanese</a></p>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>
 
-
-  <br>
   <br>
   <div class="container">
     <div>
@@ -156,7 +161,7 @@
         <div class="jumbotron" id="products" align="center">
         <br>
         <button type="button" class="btn btn-primary">
-            <h1><a href="./products.html">all products</a></h1>
+            <h1><a class="plain" href="./products.html">all products</a></h1>
         </button>
       </div></div>
       </div>
@@ -165,9 +170,9 @@
       <div class="col-sm">
       <div><div class="jumbotron" id="production" align="center">
         <br>
-        <p><
+        <p>
           <button type="button" class="btn btn-primary">
-              <h1>process</h1>
+              <h1> <a class="plain" href="./factory.html">process</a></h1>
           </button></p>
         </div>
       </div></div>
@@ -185,15 +190,21 @@
         </button>
       </div>
       <div class="modal-body">
-        <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <form name="contact" method="POST" data-netlify="true" action="./success.html">
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="full-name">Full Name</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Name" aria-label="full-name" aria-describedby="full-name">
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="email">Email</span>
+              </div>
+              <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="email">
+            </div>
+        <textarea name="message" id="message" placeholder="Type your message..."></textarea>
       </p>
     </form>
       </div>
@@ -204,25 +215,8 @@
     </div>
   </div>
 </div>
-
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Change Language</h4>
-      </div>
-      <div class="modal-body">
-        <p>Only English is currently available.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
 </div>
+
 
 <!--footer starts here-->
 
@@ -260,21 +254,11 @@
           </ul>
       </div>
     </div><br>
-  <div class="footer-copyright text-center"> Ipa Abong Group © 2019
+  <div class=" text-center"> Ipa Abong Group © 2019
   </div>
 
   <div class="container-xl text-center">
-    <div class="row">
-      <div class="col-sm">
         <a href="./fineprint.html" id="small"> Terms and Conditions </a>
-      </div>
-      <div class="col-sm">
-        <a href="./fineprint.html" id="small"> Privacy Policy </a>
-      </div>
-      <div class="col-sm">
-        <a href="./fineprint.html" id="small"> Terms and Conditions </a>
-      </div>
-    </div>
   </div>
 
 </footer>
