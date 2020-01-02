@@ -22,10 +22,6 @@ dark accents #3B1F2B rgb(59,31,43)
 
 /*All pages section*/
 
-body{
-  background-color: rgb(56,57,97);
-}
-
 p, ol, ul, span, a, td, tr, address, h6, .card{
   font-family: "Merriweather", serif;
 }
@@ -169,24 +165,7 @@ img{
   justify-content: space-around;
 }
 
-input{
-  width: 5em;
-  transition: ease-in-out, width .35s ease-in-out;
-}
 
-input:focus, input:active{
-  width: 12em;
-}
-
-textarea{
-  width: 5em;
-  transition: ease-in-out, width .35s ease-in-out;
-}
-
-textarea:focus, textarea:active{
-  width: 15em;
-  height: 10em;
-}
 
 
 /*for footer*/
