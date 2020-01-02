@@ -135,7 +135,7 @@ img{
 }
 
 #products:hover, #products:active{
-  transition:
+  transition: imagehover;
   transition-timing-function: linear;
 }
 
@@ -165,7 +165,13 @@ img{
   justify-content: space-around;
 }
 
+/*products page*/
 
+#scrollspy-factory{
+  position: relative;
+  height: 100px;
+  overflow-y: scroll;
+}
 
 
 /*for footer*/
