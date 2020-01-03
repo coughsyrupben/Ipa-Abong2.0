@@ -189,11 +189,11 @@ a:hover, a:active{
   size:
 }
 
-#small{
-  font-size: 0.75rem;
-}
-
 footer.bg-dark{
   color: rgb(219,223,172);
-  background-color: rgb(59,31,43) !important;
+  background-color: #383961 !important;
+}
+
+a.light{
+  color: rgb(219,223,172);
 }
