@@ -15,10 +15,7 @@ dark accents #3B1F2B rgb(59,31,43)
 
 /* All animations collected here*/
 
-@keyframes imagehover {
-  0% {opacity: 1}
-  100% {opacity: 0.5}
-}
+
 
 /*All pages section*/
 
@@ -32,7 +29,6 @@ h1, h2, h3, h4, h5, footer{
 
 h1{
   color: White;
-
 }
 
 h2{
@@ -49,9 +45,21 @@ img{
   justify-content: space-around;
 }
 
-a.plain{
+a.plain, a.plain:hover, a.plain:active{
   text-decoration: none;
   color: white;
+}
+
+a{
+  color: #3B1F2B;
+}
+
+a:hover, a:active{
+  color: #DB162F;
+}
+
+.list-group-item-action.active {
+  background-color: #3B1F2B;
 }
 
 /*Navbar section*/
@@ -113,8 +121,7 @@ a.plain{
   margin-bottom: 3em;}
 
 .imgblock:hover{
-  animation: imagehover;
-  animation-duration: 1s;
+  box-shadow: 0 0 2px 1px rgb(56,57,97);
 }
 
 .container .jumbotron {
@@ -128,7 +135,7 @@ a.plain{
 
 
 #homepage{
-  background-image: url("./kayukayu.jpg");
+  background-image: url("./logs.jpg");
   background-size: cover;
 }
 
@@ -138,10 +145,6 @@ a.plain{
   background-position: center;
 }
 
-#products:hover, #products:active{
-  transition: imagehover;
-  transition-timing-function: linear;
-}
 
 #production{
   background-image: url(./production.jpg);
@@ -149,11 +152,12 @@ a.plain{
   background-position: center;
 }
 
-#production:hover, #production:active{
-  animation: imagehover;
-  animation-duration: 5s;
-  animation-delay: 2s;
+#headlineJob{
+  background-image: url(./job.jpg);
+  background-size: cover;
+  background-position: center;
 }
+
 
 /*Jobs Page*/
 
@@ -169,9 +173,6 @@ a.plain{
   justify-content: space-around;
 }
 
-textarea{
-  width: 27rem;
-}
 
 /*products page*/
 

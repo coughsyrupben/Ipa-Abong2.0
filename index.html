@@ -37,7 +37,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="products.html"> Product List </a>
-              <a class="dropdown-item" href="#"> Placing an order </a>
+              <a class="dropdown-item" href="./order.html"> Placing an order </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="factory.html"> Production Process </a>
             </div>
@@ -53,7 +53,6 @@
       </div></div>
     </div></nav>
   </div>
-<br>
   <div class="container">
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <p>This webpage is in <strong>English</strong>. View in <a href="#">Indonesian</a> or <a href="#">Japanese</a></p>
@@ -63,10 +62,9 @@
   </div>
 </div>
 
-  <br>
-  <div class="container">
-    <div>
-    <div class="jumbotron" id="homepage">
+
+    <div class="jumbotron jumbotron-fluid" id="homepage">
+      <div class="container">
       <div class="row align-items-end">
 
         <div class="col-sm-8">
@@ -79,7 +77,7 @@
 
     </div>
     </div>
-  </div></div><br>
+  </div><br>
 
 
 
@@ -121,7 +119,35 @@
 </div></div>
 <br><br>
 
+<div class="container">
+    <div class= "row">
+      <div class="col-sm">
+        <div>
+        <div class="jumbotron" id="products" align="center">
+        <br>
+        <button type="button" class="btn btn-primary">
+            <h1><a class="plain" href="./products.html">all products</a></h1>
+        </button>
+      </div></div>
+      </div>
 
+
+      <div class="col-sm">
+      <div><div class="jumbotron" id="production" align="center">
+        <br>
+        <p>
+          <button type="button" class="btn btn-primary">
+              <h1> <a class="plain" href="./factory.html">process</a></h1>
+          </button></p>
+        </div>
+      </div></div>
+    </div>
+</div>
+
+<div class="container">
+  <img src="./office.jpg" class="img-fluid" alt="office picture">
+</div>
+<br>
 <div class="container"><nav>
   <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Vision</a>
@@ -154,68 +180,13 @@
 </div></div>
 <br><br>
 
+
 <div class="container">
-    <div class= "row">
-      <div class="col-sm">
-        <div>
-        <div class="jumbotron" id="products" align="center">
-        <br>
-        <button type="button" class="btn btn-primary">
-            <h1><a class="plain" href="./products.html">all products</a></h1>
-        </button>
-      </div></div>
-      </div>
-
-
-      <div class="col-sm">
-      <div><div class="jumbotron" id="production" align="center">
-        <br>
-        <p>
-          <button type="button" class="btn btn-primary">
-              <h1> <a class="plain" href="./factory.html">process</a></h1>
-          </button></p>
-        </div>
-      </div></div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="sendmessage" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Send a message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form name="contact" method="POST" data-netlify="true" action="./success.html">
-          <div class="modal-body">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="full-name">Full Name</span>
-              </div>
-              <input type="text" class="form-control" placeholder="Name" aria-label="full-name" aria-describedby="full-name">
-            </div>
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="email">Email</span>
-              </div>
-              <input type="email" class="form-control" placeholder="Email" aria-label="email" aria-describedby="email">
-            </div>
-        <textarea name="message" id="message" placeholder="Type your message..."></textarea>
-      </p>
-    </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-secondary">Send</button>
-      </div>
-    </div>
+  <div class="jumbotron" id="headlineJob" align="center">
+    <button type="button" class="btn btn-primary"><h1><a class="plain" href="./jobs.html"> Work with Us </a></h1></button>
   </div>
-</div>
-</div>
+</div><br>
+
 
 
 <!--footer starts here-->
